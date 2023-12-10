@@ -1,0 +1,72 @@
+* {
+    font-family: Roboto;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+.flex-row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-col-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-1{
+    background-color: #E1E6E0;
+}
+
+.color-2{
+    background-color: #F4F6F3;
+}
+
+.color-3{
+    background-color: #FDFDFD;
+}
+
+.titles {
+    font-size: large;
+    text-align: center;
+    font-weight:600;
+    margin: 50px;
+}
+.box-trab-gral{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    padding-bottom: 60px;
+}
+.box-trab{
+    width: 300px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+
+.box-img {
+    width: 100%;
+    height: 200px;
+    background-color: aqua;
+    background-image: url(/img/ml-azuk.png);
+    background-size: cover;
+}
+.box-text{
+    text-align: center;
+    margin: 15px;
+    font-weight: 400;
+}
+

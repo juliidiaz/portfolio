@@ -42,14 +42,14 @@ body {
     font-size: large;
     text-align: center;
     font-weight:600;
-    margin: 50px;
+    padding: 50px;
 }
 .box-trab-gral{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: start;
-    gap: 20px;
+    gap: 40px;
     padding-bottom: 60px;
 }
 .box-trab{
@@ -59,14 +59,46 @@ body {
 
 .box-img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     background-color: aqua;
-    background-image: url(/img/ml-azuk.png);
     background-size: cover;
+    filter: grayscale(50%);
+    transition: 1s;
+}
+.box-img:hover{
+    filter: grayscale(0%);
 }
 .box-text{
     text-align: center;
     margin: 15px;
     font-weight: 400;
+    border-top: solid 2px #E1E6E0;
+    padding-top: 15px;
+}
+
+.box-cursos-gral{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    padding: 30px;
+}
+
+.box-item-cursos{
+    max-width: 600px;
+    height: 250px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-item-cursos img {
+    max-width: 350px;
+}
+.box-item-cursos p {
+    padding: 15px;
 }
 

@@ -11,36 +11,88 @@
         </div>
         <div class="box-trab-gral">
             <div class="box-trab">
-                <div class="box-img"></div>
+                <div class="box-img" style="background-image: url(/img/sp.png);"></div>
                 <div class="box-text">
-                    ─── <br>
-                    <b>Mercado Liebre</b> <br>
-                    Trabajo realizado grupalmente en Digital House - 2023
+                    <b>Sportify</b> <br>
+                    <i>Trabajo realizado grupalmente en Digital House - 2023</i><br>
+                    Node JS - Express - MiSQL - API
+                    
+                    
 
                 </div>
             </div>
             <div class="box-trab">
-                <div class="box-img"></div>
+                <div class="box-img" style="background-image: url(/img/dd.png);"></div>
                 <div class="box-text">
-                    ─── <br>
-                    <b>Mercado Liebre</b> <br>
-                    Trabajo realizado grupalmente en Digital House - 2023
+                    <b>Douce Diseño</b> <br>
+                    <i>Trabajo realizado para concursar por la beca de Digital House - 2023</i><br>
+                    HTML CSS JavaScript (básico)
 
                 </div>
             </div>
             <div class="box-trab">
-                <div class="box-img"></div>
+                <div class="box-img" style="background-image: url(/img/ml.png);"></div>
                 <div class="box-text">
-                    ─── <br>
                     <b>Mercado Liebre</b> <br>
-                    Trabajo realizado grupalmente en Digital House - 2023
-
+                    <i>Trabajo individual realizado en Aprendé Programando - 2022</i>
+                    HTML CSS
                 </div>
             </div>    
+
                   
         </div>
     </div>
-    <%- include ("./partials/footer")%>
+
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    borderWidth: 1}]
+            },
+            options: {
+                scales: {
+                    y: {beginAtZero: true}
+                }
+            }
+        });
+    </script>
     
-</body>
-</html>
+    <div class="flex-col-center color-1">
+        <div class="titles">
+            CURSOS REALIZADOS <br>
+            <b>───</b>
+        </div>
+        <div class="box-cursos-gral">
+            <div class="box-item-cursos">
+                <img src="/img/dataAnalitic.png">
+                <p><b>Data Ciences & Analitycs </b> <br>
+                    <i>Data & Analytic - 2023</i> <br>
+                    Analitica descriptiva - Excel, tablas comparativas, gráficos - Contabilidad.</p>
+                </div>           
+                <div class="box-item-cursos">
+                    <img src="/img/rd.png">
+                    <p><b>Diseño Web I</b> <br>
+                        <i>Municipalidad de San Nicolás de los Arroyos - Aprende Programando</i> <br>
+                        HTML5 - CSS</p>
+                    </div> 
+                    <div class="box-item-cursos">
+                        <img src="/img/desarrollo.png">
+                        <p><b>Diseño Web I</b> <br>
+                            <i>Municipalidad de San Nicolás de los Arroyos - Aprende Programando</i> <br>
+                            HTML5 - CSS</p>
+                        </div>
+                    </div>
+                </div>
+                <%- include ("./partials/footer")%>
+            </body>
+            </html>

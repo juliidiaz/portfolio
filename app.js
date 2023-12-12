@@ -11,6 +11,9 @@ const mainRoute = require ('./src/routes/mainRoute')
 
 app.use('/', mainRoute)
 
+//hola
+
+
 //archivos privados
 app.use(express.static(path.resolve(__dirname, "./public")))
 
